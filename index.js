@@ -16,8 +16,9 @@ let multiplicar = function(num1, num2){
 
 let dividir = function(num1, num2){
     let resultado = num1 / num2
-    if (resultado % 1 != resultado){
-        resultado.toFixed(2)
+
+    if (resultado - Math.floor(resultado) !==0 ){
+        resultado = resultado.toFixed(2)
     }
     return `A Divisão entre ${num1} e ${num2} é: ${resultado}`
 }
@@ -28,10 +29,8 @@ function calcular (){
 
     const areaDeCalculo = document.getElementById('resultados')
     
-    console.log(typeof(num1))
-
-    areaDeCalculo.innerHTML = `<p>${somar(num1, num2)}</p>`
-    areaDeCalculo.innerHTML += `<p>${subtrair(num1, num2)}</p>`
-    areaDeCalculo.innerHTML += `<p>${multiplicar(num1, num2)}</p>`
-    areaDeCalculo.innerHTML += `<p>${dividir(num1, num2)}</p>`
+    areaDeCalculo.innerHTML = `<p class='resposta'>${somar(num1, num2)}</p>`
+    areaDeCalculo.innerHTML += `<p class='resposta'>${subtrair(num1, num2)}</p>`
+    areaDeCalculo.innerHTML += `<p class='resposta'>${multiplicar(num1, num2)}</p>`
+    areaDeCalculo.innerHTML += `<p class='resposta'>${dividir(num1, num2)}</p>`
 }
