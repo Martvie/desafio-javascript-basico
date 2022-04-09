@@ -38,12 +38,12 @@ function calcular (){
     let num1 = Number(document.getElementById('number1').value)
     let num2 = Number(document.getElementById('number2').value)
 
-    validar(num1, num2)
-
     const areaDeCalculo = document.getElementById('resultados')
-    
-    areaDeCalculo.innerHTML = `<p class='resposta'>${somar(num1, num2)}</p>`
-    areaDeCalculo.innerHTML += `<p class='resposta'>${subtrair(num1, num2)}</p>`
-    areaDeCalculo.innerHTML += `<p class='resposta'>${multiplicar(num1, num2)}</p>`
-    areaDeCalculo.innerHTML += `<p class='resposta'>${dividir(num1, num2)}</p>`
+
+    if (validar(num1, num2)) {
+        areaDeCalculo.innerHTML = `<p class='resposta'>${somar(num1, num2)}</p>`
+        areaDeCalculo.innerHTML += `<p class='resposta'>${subtrair(num1, num2)}</p>`
+        areaDeCalculo.innerHTML += `<p class='resposta'>${multiplicar(num1, num2)}</p>`
+        areaDeCalculo.innerHTML += `<p class='resposta'>${dividir(num1, num2)}</p>`
+    }
 }
