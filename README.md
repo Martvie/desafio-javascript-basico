@@ -5,3 +5,9 @@ Desafio de JavaScript básico com operações matemáticas básicas, aproveitei 
 ## Link
 
 [Site](#)
+
+# Imagens Projeto
+
+<p text-align="center">
+    <img src="./src/images/screenshot.jpeg">
+</p>
