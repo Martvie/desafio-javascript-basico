@@ -23,9 +23,22 @@ let dividir = function(num1, num2){
     return `A Divisão entre ${num1} e ${num2} é: ${resultado}`
 }
 
+function validar(number1, number2){
+    let stringNum1 = String(number1)
+    let stringNum2 = String(number2)
+
+    if (stringNum1 < 1 || stringNum2 < 1) {
+        alert('Por favor, preencha os dois campos com números')
+    } else {
+        return true
+    }
+}
+
 function calcular (){
     let num1 = Number(document.getElementById('number1').value)
     let num2 = Number(document.getElementById('number2').value)
+
+    validar(num1, num2)
 
     const areaDeCalculo = document.getElementById('resultados')
     
