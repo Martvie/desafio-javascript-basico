@@ -24,6 +24,7 @@ let dividir = function(num1, num2){
 }
 
 function validar(number1, number2){
+    
     let stringNum1 = String(number1)
     let stringNum2 = String(number2)
 
