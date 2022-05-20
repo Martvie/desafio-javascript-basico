@@ -9,5 +9,5 @@ Desafio de JavaScript básico com operações matemáticas básicas, aproveitei 
 # Imagens Projeto
 
 <p text-align="center">
-    <img src="./src/images/screenshot.jpeg">
+    <img src="./src/images/screen.gif">
 </p>
