@@ -1,20 +1,20 @@
 
-let somar = function(num1, num2){
+const somar = function(num1, num2){
     let resultado = num1 + num2
     return `A soma entre ${num1} e ${num2} é: ${resultado}`
 }
 
-let subtrair = function(num1, num2){
+const subtrair = function(num1, num2){
     let resultado = num1 - num2
     return `A subtração entre ${num1} e ${num2} é: ${resultado}`
 }
 
-let multiplicar = function(num1, num2){
+const multiplicar = function(num1, num2){
     let resultado = num1 * num2
     return `A Multiplicação entre ${num1} e ${num2} é: ${resultado}`
 }
 
-let dividir = function(num1, num2){
+const dividir = function(num1, num2){
     let resultado = num1 / num2
 
     if (resultado - Math.floor(resultado) !==0 ){
